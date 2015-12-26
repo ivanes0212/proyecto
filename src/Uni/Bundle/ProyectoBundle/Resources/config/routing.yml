@@ -1,0 +1,6 @@
+uni_proyecto_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: uniProyectoBundle:Default:index }
+uni_proyecto:
+    path:     /hola
+    defaults: { _controller: uniProyectoBundle:Default:hola }

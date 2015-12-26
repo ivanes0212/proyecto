@@ -1,0 +1,4 @@
+uni_proyecto:
+    resource: "@uniProyectoBundle/Resources/config/routing.yml"
+    prefix:   /
+
