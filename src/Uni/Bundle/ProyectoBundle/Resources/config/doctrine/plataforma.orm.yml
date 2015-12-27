@@ -1,0 +1,14 @@
+Uni\Bundle\ProyectoBundle\Entity\plataforma:
+    type: entity
+    table: null
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        nombrePlat:
+            type: string
+            length: '50'
+    lifecycleCallbacks: {  }

@@ -1,0 +1,48 @@
+{% extends 'uniProyectoBundle::layout.html.twig' %}
+
+
+{% block cuerpo %}
+    <h1>noticias list</h1>
+
+    <table class="records_list">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Titulonot</th>
+                <th>Textonot</th>
+                <th>Fechanot</th>
+                <th>Fotonot</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for entity in entities %}
+            <tr>
+                <td><a href="{{ path('noticias_show', { 'id': entity.id }) }}">{{ entity.id }}</a></td>
+                <td>{{ entity.tituloNot }}</td>
+                <td>{{ entity.textoNot }}</td>
+                <td>{% if entity.fechaNot %}{{ entity.fechaNot|date('Y-m-d H:i:s') }}{% endif %}</td>
+                <td>{{ entity.fotoNot }}</td>
+                <td>
+                <ul>
+                    <li>
+                        <a href="{{ path('noticias_show', { 'id': entity.id }) }}">show</a>
+                    </li>
+                    <li>
+                        <a href="{{ path('noticias_edit', { 'id': entity.id }) }}">edit</a>
+                    </li>
+                </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+        <ul>
+        <li>
+            <a href="{{ path('noticias_new') }}">
+                Create a new entry
+            </a>
+        </li>
+    </ul>
+    {% endblock %}

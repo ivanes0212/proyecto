@@ -1,0 +1,30 @@
+juegos:
+    path:     /
+    defaults: { _controller: "uniProyectoBundle:juegos:index" }
+
+juegos_show:
+    path:     /{id}/show
+    defaults: { _controller: "uniProyectoBundle:juegos:show" }
+
+juegos_new:
+    path:     /new
+    defaults: { _controller: "uniProyectoBundle:juegos:new" }
+
+juegos_create:
+    path:     /create
+    defaults: { _controller: "uniProyectoBundle:juegos:create" }
+    requirements: { _method: post }
+
+juegos_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "uniProyectoBundle:juegos:edit" }
+
+juegos_update:
+    path:     /{id}/update
+    defaults: { _controller: "uniProyectoBundle:juegos:update" }
+    requirements: { _method: post|put }
+
+juegos_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "uniProyectoBundle:juegos:delete" }
+    requirements: { _method: post|delete }

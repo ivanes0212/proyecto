@@ -1,0 +1,21 @@
+Uni\Bundle\ProyectoBundle\Entity\noticias:
+    type: entity
+    table: null
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        tituloNot:
+            type: string
+            length: '50'
+        textoNot:
+            type: text
+        fechaNot:
+            type: datetime
+        fotoNot:
+            type: string
+            length: '50'
+    lifecycleCallbacks: {  }

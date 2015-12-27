@@ -1,0 +1,30 @@
+plataforma:
+    path:     /
+    defaults: { _controller: "uniProyectoBundle:plataforma:index" }
+
+plataforma_show:
+    path:     /{id}/show
+    defaults: { _controller: "uniProyectoBundle:plataforma:show" }
+
+plataforma_new:
+    path:     /new
+    defaults: { _controller: "uniProyectoBundle:plataforma:new" }
+
+plataforma_create:
+    path:     /create
+    defaults: { _controller: "uniProyectoBundle:plataforma:create" }
+    requirements: { _method: post }
+
+plataforma_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "uniProyectoBundle:plataforma:edit" }
+
+plataforma_update:
+    path:     /{id}/update
+    defaults: { _controller: "uniProyectoBundle:plataforma:update" }
+    requirements: { _method: post|put }
+
+plataforma_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "uniProyectoBundle:plataforma:delete" }
+    requirements: { _method: post|delete }

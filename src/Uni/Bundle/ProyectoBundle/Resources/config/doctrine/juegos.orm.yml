@@ -1,0 +1,22 @@
+Uni\Bundle\ProyectoBundle\Entity\juegos:
+    type: entity
+    table: null
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        tituloJue:
+            type: string
+            length: '50'
+        descJue:
+            type: text
+        compJue:
+            type: string
+            length: '50'
+        fotoJue:
+            type: string
+            length: '50'
+    lifecycleCallbacks: {  }

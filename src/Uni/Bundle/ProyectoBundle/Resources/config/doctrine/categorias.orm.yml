@@ -1,0 +1,16 @@
+Uni\Bundle\ProyectoBundle\Entity\categorias:
+    type: entity
+    table: null
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        nombreCat:
+            type: string
+            length: '50'
+        descCat:
+            type: text
+    lifecycleCallbacks: {  }

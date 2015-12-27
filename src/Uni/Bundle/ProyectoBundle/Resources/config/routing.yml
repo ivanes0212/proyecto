@@ -1,3 +1,19 @@
+uni_proyecto_noticias:
+    resource: "@uniProyectoBundle/Resources/config/routing/noticias.yml"
+    prefix:   /noticias
+
+uni_proyecto_plataforma:
+    resource: "@uniProyectoBundle/Resources/config/routing/plataforma.yml"
+    prefix:   /plataforma
+
+uni_proyecto_categorias:
+    resource: "@uniProyectoBundle/Resources/config/routing/categorias.yml"
+    prefix:   /categorias
+
+uni_proyecto_juegos:
+    resource: "@uniProyectoBundle/Resources/config/routing/juegos.yml"
+    prefix:   /juegos
+
 uni_proyecto_homepage:
     path:     /hello/{name}
     defaults: { _controller: uniProyectoBundle:Default:index }

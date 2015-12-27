@@ -1,0 +1,30 @@
+categorias:
+    path:     /
+    defaults: { _controller: "uniProyectoBundle:categorias:index" }
+
+categorias_show:
+    path:     /{id}/show
+    defaults: { _controller: "uniProyectoBundle:categorias:show" }
+
+categorias_new:
+    path:     /new
+    defaults: { _controller: "uniProyectoBundle:categorias:new" }
+
+categorias_create:
+    path:     /create
+    defaults: { _controller: "uniProyectoBundle:categorias:create" }
+    requirements: { _method: post }
+
+categorias_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "uniProyectoBundle:categorias:edit" }
+
+categorias_update:
+    path:     /{id}/update
+    defaults: { _controller: "uniProyectoBundle:categorias:update" }
+    requirements: { _method: post|put }
+
+categorias_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "uniProyectoBundle:categorias:delete" }
+    requirements: { _method: post|delete }

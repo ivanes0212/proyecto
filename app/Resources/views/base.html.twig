@@ -1,13 +1,29 @@
 <!DOCTYPE html>
 <html>
     <head>
+        
         <meta charset="UTF-8" />
         <title>{% block title %}Welcome!{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}
+        {% block stylesheets %}
+            <link href="{{ asset ('bundles/uniproyecto/css/fuente.css') }}" type="text/css" rel="stylesheet" />
+        {% endblock %}
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
     </head>
     <body>
-        {% block body %}{% endblock %}
-        {% block javascripts %}{% endblock %}
+     <div id="cabecera">
+            {% block cabecera %}
+                <h1><font color="#CBCBFD">VideoJuegos</font></h1>
+            {% endblock %}
+        </div>
+       
+         <div id="cuerpo">
+            {% block cuerpo %}{% endblock %}
+        </div>
+        
+         <div id="pie">
+            {% block pie %}
+                <font color="#CBCBFD">By IVAN</font>
+            {% endblock %}
+        </div>
     </body>
 </html>
